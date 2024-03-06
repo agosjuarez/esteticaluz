@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuzEstetica</title>
+    <link rel="stylesheet" href="insumosLuz.css">
+</head>
+
+<body>
+    <br><br>
+    <center>
+    <form id="formulario">
+    <br>
+    <h1>Insumos faltantes</h1>
+    <br><br>
+        <label for="producto">Producto</label>
+        <input type="text" id="producto" required>
+        <br><br><br>
+        <label for="cantidad">Cantidad</label>
+        <input type="number" id="cantidad" required>
+        <br><br><br>
+        <label for="opciones">Marca</label>
+        <select id="opciones" required>
+            <option value="WellaProfessional">WellaProfessional</option>
+            <option value="Meline">Meline</option>
+            <option value="Vogue">Vogue</option>
+            <option value="Osis+">Osis+</option>
+            <option value="Loreal">Loreal</option>
+            <option value="SchwarzkopsProfessional">SchwarzkopsProfessional</option>
+            <option value="KerastaseParis">KerastaseParis</option>
+            <option value="Kativa">Kativa</option>
+
+            
+        </select>
+        <br><br><br>
+        <label for="precio">Precio</label>
+        <input type="number" id="precio" required>
+        
+        <br><br><br>
+        <button type="button" onclick="guardarInsumo()" id="btnGuardar">Cargar insumo</button>
+        <br>
+        <button type="button" id="btnActualizar">Actualizar</button><br><br><br><br>
+    </form>
+    </center>
+    <center>
+        <br><br><br>
+        <table id="tablaInsumos">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Marca</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </center>  
+    <script src="insumosLuz.js"></script>
+</body>
+</html>
+</body>
+</html>

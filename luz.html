@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuzEstetica</title>
+    <link rel="stylesheet" href="luz.css">
+</head>
+<body>
+    <header>
+      <nav>
+        <h1>LuzEstetica</h1>
+      <ul>
+       <li><a href="#">Inicio</a></li> 
+       <li><a href="#">Nosotros</a></li> 
+       <li><a href="#">Servicios</a></li> 
+       <li><a href="login.html">Cerrar Sesion</a></li> 
+    
+      </ul>
+        
+      </nav>
+      
+      
+    </header>
+    <center>
+      <br><br>
+      <h1> Bienvenidos a LuzEstetica</h1>
+  </center>
+
+<center>
+  <form id="formulario">
+    <br>
+    <h1>Agendar un turno</h1>
+    <br><br>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" required>
+        <br><br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" required>
+<br><br>
+<label for="celular">Numero de celular</label>
+        <input type="text" id="celular" required>
+
+        <br><br>
+        <label for="opciones">Servicio a realizar</label>
+        <select id="opciones" required>
+            <option value="peluqueria">Peluqueria</option>
+            <option value="Manicura">Manicura</option>
+            <option value="maquillaje">Maquillaje</option>
+            <option value="cejaypestaña">Cejas y Pestañas</option>
+        
+
+            
+        </select>
+        <br><br>
+        <label for="fecha">Fecha y hora</label>
+        <input type="datetime-local" id="fecha" required>
+
+        
+        
+        <br><br>
+        <button type="button" onclick="guardarInsumo()" id="btnGuardar">Confirmar turno</button>
+        <br><br>
+        <button type="button" id="btnActualizar">Actualizar</button><br><br><br><br>
+    </form>
+    </center>
+    <center>
+        <br><br><br>
+        <table id="tablaInsumos">
+          <h2>Turnos Reservados</h2>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Numero de celular</th>
+                    <th>Servicio a Realizar</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </center>  
+  
+   <script src="luz.js"></script>
+
+
+  
+</body>
+</html>
