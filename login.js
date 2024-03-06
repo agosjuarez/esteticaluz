@@ -13,7 +13,7 @@ window.location = "luz.html"
 }
 else if (usuario.value === "Administrador" && contraseña.value === "1234")
 {
-    window.location = "insumosLuz.html"
+    window.location = "administrador.html"
 }
 else {
   alert( "datos incorrectos")
